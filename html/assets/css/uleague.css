@@ -1,0 +1,39 @@
+body {
+    font-family: Montserrat;
+    margin: 0px;
+    background: #0e0e0e;
+}
+
+p {
+    color: white;
+    text-align: center;
+}
+
+.championImage {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -60%);
+}
+button {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -0%);
+    cursor: grab;
+}
+#links {
+	color: white;
+	font-family: Exo\ 2,'Source Sans Pro';
+	font-size: 0.75em;
+
+	top: 0px;
+	right: 0px;
+	z-index: 100;
+
+	text-align: right;
+	position: absolute;
+}

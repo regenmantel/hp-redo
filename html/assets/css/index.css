@@ -1,0 +1,232 @@
+/*  */
+body {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	margin: 0px;
+	padding: 0px;
+	cursor: context-menu;
+	
+	background-image: url('<?php echo $backgroundImage; ?>'); 
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+h1, h2, ul, li, p {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+h1 {
+	font-size: 1.8em;
+	font-weight: 700;
+	color: #222;
+}
+
+h2 {
+	font-size: .5em;
+	font-weight: 700;
+	color: #222;
+	margin-top: 10px;
+}
+
+ul {
+	list-style: none;
+	margin-top: 5px;
+	margin-bottom: 13px;
+}
+
+li {
+	list-style: none;
+}
+
+input {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+p {
+	font-size: 12px;
+}
+
+a:visited {
+	text-decoration: none;
+	color: black;
+}
+
+#particles-js {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-image: url('');
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+
+/* Middle Part */
+input#seekSlider {
+	width: 70px;
+}
+
+.panel li {
+	text-align: center;
+}
+
+.panel {
+	font-family: Exo\ 2,'Source Sans Pro';
+	font-size: 1.3em;
+	position: absolute;
+	width: 500px;
+	top: 45%;
+	left: 50%;
+	margin: -110px 0 0 -250px;
+	padding: 20px;
+	border-radius: 4px;
+	box-sizing: border-box;
+	z-index: 100;
+}
+
+.glitch {
+	color: black;
+	font-size: 1.8em;
+
+	position: relative;
+	margin: 0 auto;
+	border-bottom: 3px solid black;  /*main underline !imp */
+	/*margin: 0px 0px 0px 125px;*/
+}
+
+.info {
+	font-size: 1em;
+	margin-bottom: 15px;
+}
+
+#currentSong {
+	font-size: 15px;
+}
+
+#previousSong, #nextSong {
+	font-size: 13px;
+}
+
+#timer {
+	margin: 8px;
+}
+
+/* nav-bar */
+
+.navright {
+	font-family: Exo\ 2,'Source Sans Pro';
+	font-size: 0.75em;
+	position: absolute;
+
+	bottom: 0px;
+	right: 0px;
+	z-index: 100;
+
+	text-align: right;
+}
+
+a {
+	text-decoration: none;
+	text-align: center;
+	margin:15px 15px 0px 0px;
+}
+
+a:hover {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* CSS for hexclock.php Start */
+
+.hexclock {
+	color: white;
+	font-family: "Montserrat", sans-serif;
+	font-size: 2em;
+	font-weight: 100;
+	min-width: 200px;
+	text-align: center;
+	display: block;
+}
+
+/* CSS for hexclock.php End */
+
+
+/* Switch Button */
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 30px;
+	height: 17px;
+}
+
+.switch-div {
+	margin: 4px;
+}
+  
+.switch input { 
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+  
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+  
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 13px;
+	width: 13px;
+	left: 2px;
+	bottom: 2px;
+	background-color: black;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+  
+input:checked + .slider {
+	background-color: white;
+}
+  
+input:focus + .slider {
+	box-shadow: 0 0 1px white;
+}
+  
+input:checked + .slider:before {
+	-webkit-transform: translateX(13px);
+	-ms-transform: translateX(13px);
+	transform: translateX(13px);
+}
+  
+/* Rounded sliders */
+.slider.round {
+	border-radius: 17px;
+}
+  
+.slider.round:before {
+	border-radius: 50%;
+}
+
+.center {
+	text-align: center;
+}
