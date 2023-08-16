@@ -1,6 +1,6 @@
 <!--
 	league.php for regenmantel
-	Copyright 2019-2022 regenmantel, All rights reserved
+	Copyright 2014-2022 regenmantel, All rights reserved
 -->
 <?php
 $title = "league - regenmantel";

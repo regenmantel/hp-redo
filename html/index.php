@@ -43,6 +43,8 @@ $backgroundColor = "white";
 			background-color: <?php echo($backgroundcolor); ?>;
 		}
 	</style>
+	<!--
+	,
 	<script>
 		window.onload = function() {
 			var checkbox = document.getElementById('cbox');
@@ -50,6 +52,8 @@ $backgroundColor = "white";
 			document.getElementById('cbox').checked = checked;
 		}
 	</script>
+
+	-->
 </head>
 <body>
 	<div id="particles-js">
@@ -57,15 +61,16 @@ $backgroundColor = "white";
 	<script src="assets/js/particles.jquery.min.js"></script>
 	<script src="assets/js/custom.min.js"></script>
 	<script src="assets/js/darkmode.js"></script>
-	
 	<div class="navright">
 		<!--
+		
 		<div class="switch-div">
 			<label class="switch">
 				<input id="cbox" type="checkbox" onclick="validate()"></input>
 				<span class="slider round"></span>
 			</label>
 		</div>
+		
 		-->
 	</div>
 	<div class="panel center">
