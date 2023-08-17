@@ -43,17 +43,6 @@ $backgroundColor = "white";
 			background-color: <?php echo($backgroundcolor); ?>;
 		}
 	</style>
-	<!--
-	,
-	<script>
-		window.onload = function() {
-			var checkbox = document.getElementById('cbox');
-			var checked = JSON.parse(localStorage.getItem(checkbox));
-			document.getElementById('cbox').checked = checked;
-		}
-	</script>
-
-	-->
 </head>
 <body>
 	<div id="particles-js">
@@ -62,16 +51,13 @@ $backgroundColor = "white";
 	<script src="assets/js/custom.min.js"></script>
 	<script src="assets/js/darkmode.js"></script>
 	<div class="navright">
-		<!--
-		
+
 		<div class="switch-div">
 			<label class="switch">
 				<input id="cbox" type="checkbox" onclick="validate()"></input>
 				<span class="slider round"></span>
 			</label>
 		</div>
-		
-		-->
 	</div>
 	<div class="panel center">
 	<h1 class="glitch" data-text="<?php echo $name;?>"><?php echo $name;?></h1>
@@ -79,11 +65,11 @@ $backgroundColor = "white";
 			<span id="day"></span>, <span id="date"></span> - <span id="time"></span>
 		</p>
 		<div class="center ">
-			<a href="https://github.com/regenmantel" target="_blank"><i class="fa-brands fa-github fa-beat-fade"></i></a>
-			<a href="https://github.com/regenmantel" target="_blank"><i class="fa-brands fa-square-x-twitter fa-beat-fade"></i></a>
-			<a href="https://www.youtube.com/channel/UC0gfw4eJpOgO1iXIx4BJwsg" target="_blank"><i class="fa-brands fa-youtube fa-beat-fade"></i></a>
-			<a href="#" target="_blank"><i class="fa-brands fa-paypal fa-beat-fade"></i></a>
-			<a href="/hexclock.php" target="_blank"><i class="fa-solid fa-clock fa-beat-fade"></i></a>
+			<a href="https://github.com/regenmantel" target="_blank"><i class="fa-brands fa-github fa-beat-fade" id="github"></i></a>
+			<a href="https://twitter.com/Bikkosim" target="_blank"><i class="fa-brands fa-square-x-twitter fa-beat-fade" id="x-twitter"></i></a>
+			<a href="https://www.youtube.com/channel/UC0gfw4eJpOgO1iXIx4BJwsg" target="_blank"><i class="fa-brands fa-youtube fa-beat-fade" id="yt"></i></a>
+			<a href="#" target="_blank"><i class="fa-brands fa-paypal fa-beat-fade" id="paypal"></i></a>
+			<a href="/hexclock.php" target="_blank"><i class="fa-solid fa-clock fa-beat-fade" id="hexclock"></i></a>
 		</div>
 		<!---
 		<ul>

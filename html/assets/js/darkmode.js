@@ -1,46 +1,40 @@
-function validate() {
+window.onload = function validate() {
     var box = document.getElementById('cbox');
+    var panelClass = document.getElementsByClassName('panel');
+    var glitchClass = document.getElementsByClassName('glitch');
+    var github = document.getElementById('github');
+    var xtwitter = document.getElementById('x-twitter');
+    var yt = document.getElementById('yt');
+    var paypal = document.getElementById('paypal');
+    var hexclock = document.getElementById('hexclock');
+
     if (box.checked) {
 		document.body.style.backgroundColor = "#0f0f0f";
 
-        var panelClass = document.getElementsByClassName('panel');
-        var glitchClass = document.getElementsByClassName('glitch');
-        var navClass = document.getElementsByClassName('navright');
-        var links = document.getElementsByTagName('a');
-
-        for(var i = 0; i < panelClass.length; i++) {
-            panelClass[i].style.color = "#f1f1f1";
-        }
+        github.style.color = "#f1f1f1";
+        xtwitter.style.color = "#f1f1f1";
+        yt.style.color = "#f1f1f1";
+        paypal.style.color = "#f1f1f1";
+        hexclock.style.color = "#f1f1f1";
+        
         for(var i = 0; i < glitchClass.length; i++) {
+            panelClass[i].style.color = "#f1f1f1";
             glitchClass[i].style.color = "#f1f1f1";
             glitchClass[i].style.borderBottomColor = "#f1f1f1";
-        }
-        for(var i = 0; i < links.length; i++) {
-            links[i].style.color = "#f1f1f1";
-        }
-        for(var i = 0; i < navClass.length; i++) {
-            navClass[i].style.color = "#f1f1f1";
         }
 	} else {
 		document.body.style.backgroundColor = "white";
         
-        var panelClass = document.getElementsByClassName('panel');
-        var glitchClass = document.getElementsByClassName('glitch');
-        var navClass = document.getElementsByClassName('navright');
-        var links = document.getElementsByTagName('a');
+        github.style.color = "#0f0f0f";
+        xtwitter.style.color = "#0f0f0f";
+        yt.style.color = "#0f0f0f";
+        paypal.style.color = "#0f0f0f";
+        hexclock.style.color = "#0f0f0f";
 
-        for(var i = 0; i < panelClass.length; i++) {
-            panelClass[i].style.color = "#0f0f0f";
-        }
         for(var i = 0; i < glitchClass.length; i++) {
+            panelClass[i].style.color = "#0f0f0f";
             glitchClass[i].style.color = "#0f0f0f";
             glitchClass[i].style.borderBottomColor = "#0f0f0f";
-        }
-        for(var i = 0; i < links.length; i++) {
-            links[i].style.color = "#0f0f0f";
-        }
-        for(var i = 0; i < navClass.length; i++) {
-            navClass[i].style.color = "#0f0f0f";
         }
 	}
 
@@ -49,12 +43,10 @@ function validate() {
     checkbox.addEventListener('change', function() {
         if(this.checked) {
             window.localStorage.setItem(checkbox, checkbox.checked);
-            
-        validate();
+            validate();
         } else {
             window.localStorage.setItem(checkbox, checkbox);
-            
-        validate();
+            validate();
         }
     });
 }
