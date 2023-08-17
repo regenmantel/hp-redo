@@ -1,5 +1,5 @@
 window.onload = function validate() {
-    var box = document.getElementById('cbox');
+    var checkbox = document.getElementById('cbox');
     var panelClass = document.getElementsByClassName('panel');
     var glitchClass = document.getElementsByClassName('glitch');
     var github = document.getElementById('github');
@@ -8,7 +8,7 @@ window.onload = function validate() {
     var paypal = document.getElementById('paypal');
     var hexclock = document.getElementById('hexclock');
 
-    if (box.checked) {
+    if (checkbox.checked) {
 		document.body.style.backgroundColor = "#0f0f0f";
 
         github.style.color = "#f1f1f1";
@@ -37,8 +37,6 @@ window.onload = function validate() {
             glitchClass[i].style.borderBottomColor = "#0f0f0f";
         }
 	}
-
-    var checkbox = document.getElementById('cbox');
 
     checkbox.addEventListener('change', function() {
         if(this.checked) {
